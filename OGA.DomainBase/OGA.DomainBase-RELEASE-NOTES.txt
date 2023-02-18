@@ -1,0 +1,117 @@
+Type:			Project Release Notes
+For:			Domain Base Library
+Date:			20220927
+Description:	This is the base set of standardized classes for domain design usage.
+				It includes the following:
+					Aggregate root interface, to be inherited by all aggregate types.
+					Base repository interface, to be inherited by all repository classes.
+					Base configuration element entity class for standardized configuration storage.
+					Base domain object, to be inherited by all domain classes.
+					Base value object, to be inherited by all value objects, and classes with sample usage.
+					Base user context class, to allow for the implementation of role-based security at the domain service layer.
+					Query helpers to produce sorted and filtered paginated query results, at the domain service layer, with predicate building.
+Project Organizational Notes:
+				This library supports multiple Net Core targets (5 and 6) from a single Shared Project.
+				And, it also include testing in both targets from a single Shared project (of testing code).
+				Here's a list of the projects, to clarify each one's purpose:
+					OGA_DomainBase				Net 5 Target project
+					OGA_DomainBase_NET6			Net 6 Target project
+					OGA_DomainBase_SP			Shared code for target projects
+					OGA_DomainBase_NET6_Tests	Net 6 Target tests
+					OGA_DomainBase_Test2		Net 5 Target tests
+					OGA_DomainBase_Tests_SP		Shared code of test projects
+Targets:		Two compiled targets are currently generated. Both support all entity ID datatypes (string, int, Guid, etc), using a generic.
+Dependencies:	.NET 5.0
+				.NET 6.0
+				OGA.SharedKernel v1.2.1
+Repo_URL:		https://192.168.1.227/svn/NETCore_SoftwareLibraries/
+Source_Path:	NETCore SoftwareLibraries/OGA_DomainBase
+Binary_URL:		http://192.168.1.161:8080/packages/oga_domainbase
+Binary_URL:		http://192.168.1.161:8080/packages/oga_domainbase_NET6
+----------------------------------------
+Pending Changes:
+	Include in next release version...
+----------------------------------------
+Current:
+	Release:	v2.0.6
+	Date:		20220927
+	Build:		18
+	Changes:
+		1.	Compiled against latest libraries.
+
+----------------------------------------
+History:
+	Release:	v2.0.4
+	Date:		20220625
+	Build:		16
+	Changes:
+		1.	Added Net 6 support and reorganized library tests.
+
+	Release:	v2.0.3
+	Date:		20220625
+	Build:		15
+	Changes:
+		1.	Added Net 6 support and reorganized library tests.
+
+	Release:	v2.0.2
+	Date:		20220423
+	Build:		14
+	Changes:
+		1.	Updated the Domain Base project with latest dependencies.
+
+	Release:	v2.0.0
+	Date:		20220213
+	Build:		12
+	Changes:
+		1.	Updated the Domain Base project to utilize a generic type for the entity ID across all classes.
+			This change allows for one compiled binary to be used for all Id types.
+
+	Release:	v1.1.2
+	Date:		20220204
+	Build:		10
+	Changes:
+		1.	Updated the Paginated List interface to contain a List of TResult, instead of inherit from a List of TResult.
+			This change allows the pagination properties to show up in the query result.
+
+	Release:	v1.1.1
+	Date:		20220203
+	Build:		9
+	Changes:
+		1.	Updated the Predicate Builder class file to revise the sample usage of it.
+			No functional change made for this, just updating comments of sample usage.
+		2.	Added two new PaginatedList interfaces, called, IMappingPaginatedList and IMappingPaginatedList_withURL.
+			These interfaces are similar to the generic PaginatedList interface, with the following changes:
+				The generic variable is renamed to TResult, instead of T.
+				And, the interface name is different because these interfaces are intended to be used when a source object type
+				is mapped into a target object type during pagination.
+			These two interfaces are used in places such as a Web API controller endpoint, where a domain service returns
+				an IQueryable of some domain entity type, and the API needs to transform that into a paginated results list
+				of a DTO object type.
+			The implementations of these new mapping paginated list interfaces interfaces will likely use an AutoMapper library
+				or some bespoke mapping logic. Either of which, will be referenced in the Web API layer.
+			This source to result mapping functionality will let the mapping paginated list classes do the dirty work of mapping
+				entities to DTOs, while forming the paginated listing that will be returned to the caller.
+
+	Release:	v1.0.3
+	Date:		20211228
+	Build:		7
+	Changes:
+		1.	Updated UserContext class to change userid property setter scope from protected to public, to allow it to be set by domain services.
+
+	Release:	v1.0.1
+	Date:		20211212
+	Changes:
+		No actual updates in this version.
+		The version was incremented to test the nuget pipeline.
+
+	Release:	v1.0.0
+	Date:		20211212
+	Changes:
+		No actual updates in this version.
+		This version was incremented to test the nuget pipeline.
+
+	Release:	v1.0.0-build2
+	Date:		20211212
+	Changes:
+		No actual updates in this version.
+		This version was incremented to test the nuget pipeline.

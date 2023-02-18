@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a9a4e0e9-db33-4fec-b6f6-7753f8bf395c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>OGA.DomainBase_SP</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\ConfigElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\cStorageBaseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DomainObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IAggregateRoot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ValueObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\IMappingPaginatedList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\IPaginatedList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\PredicateBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\QueryObjectParams.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\SortingExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryHelpers\SortParam.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleUsage\cItem_SampleValueObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SampleUsage\cSampleOwnerEntity.cs" />
+  </ItemGroup>
+</Project>

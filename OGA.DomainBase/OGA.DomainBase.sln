@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OGA.DomainBase_NET5", "OGA.DomainBase_NET5\OGA.DomainBase_NET5.csproj", "{860787D8-A47C-40EE-835A-F69DED312314}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OGA.DomainBase_NET6", "OGA.DomainBase_NET6\OGA.DomainBase_NET6.csproj", "{C5DD212F-6FAA-4679-832F-822DC428308D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "OGA.DomainBase_SP", "OGA.DomainBase_SP\OGA.DomainBase_SP.shproj", "{A9A4E0E9-DB33-4FEC-B6F6-7753F8BF395C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "OGA_DomainBase_Tests_SP", "OGA_DomainBase_Tests_SP\OGA_DomainBase_Tests_SP.shproj", "{2C133213-AC72-4918-BEE3-777724242CD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OGA_DomainBase_NET5_Tests", "OGA_DomainBase_NET5_Tests\OGA_DomainBase_NET5_Tests.csproj", "{C772945D-2B92-4FCF-85DF-47325C71D418}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OGA_DomainBase_NET6_Tests", "OGA_DomainBase_NET6_Tests\OGA_DomainBase_NET6_Tests.csproj", "{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95C8D0F8-5297-46DF-B226-3E0137A4B217}"
+	ProjectSection(SolutionItems) = preProject
+		OGA.DomainBase-RELEASE-NOTES.txt = OGA.DomainBase-RELEASE-NOTES.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{860787D8-A47C-40EE-835A-F69DED312314}.Debug|Any CPU.ActiveCfg = DebugWin|Any CPU
+		{860787D8-A47C-40EE-835A-F69DED312314}.Debug|Any CPU.Build.0 = DebugWin|Any CPU
+		{860787D8-A47C-40EE-835A-F69DED312314}.Debug|x64.ActiveCfg = DebugWin|x64
+		{860787D8-A47C-40EE-835A-F69DED312314}.Debug|x64.Build.0 = DebugWin|x64
+		{860787D8-A47C-40EE-835A-F69DED312314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860787D8-A47C-40EE-835A-F69DED312314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860787D8-A47C-40EE-835A-F69DED312314}.Release|x64.ActiveCfg = Release|Any CPU
+		{860787D8-A47C-40EE-835A-F69DED312314}.Release|x64.Build.0 = Release|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Debug|Any CPU.ActiveCfg = DebugWin|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Debug|Any CPU.Build.0 = DebugWin|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Debug|x64.ActiveCfg = DebugWin|x64
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Debug|x64.Build.0 = DebugWin|x64
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5DD212F-6FAA-4679-832F-822DC428308D}.Release|x64.Build.0 = Release|Any CPU
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Debug|x64.ActiveCfg = Debug|x64
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Debug|x64.Build.0 = Debug|x64
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Release|x64.ActiveCfg = Release|x64
+		{C772945D-2B92-4FCF-85DF-47325C71D418}.Release|x64.Build.0 = Release|x64
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Debug|x64.ActiveCfg = Debug|x64
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Debug|x64.Build.0 = Debug|x64
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Release|x64.ActiveCfg = Release|x64
+		{A2BC5E1F-CE9A-401B-B2E3-AC5021152791}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D0D05E9-6F38-40F6-8D19-F73160978799}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		OGA_DomainBase_Tests_SP\OGA_DomainBase_Tests_SP.projitems*{2c133213-ac72-4918-bee3-777724242cd9}*SharedItemsImports = 13
+		OGA.DomainBase_SP\OGA.DomainBase_SP.projitems*{860787d8-a47c-40ee-835a-f69ded312314}*SharedItemsImports = 5
+		OGA_DomainBase_Tests_SP\OGA_DomainBase_Tests_SP.projitems*{a2bc5e1f-ce9a-401b-b2e3-ac5021152791}*SharedItemsImports = 5
+		OGA.DomainBase_SP\OGA.DomainBase_SP.projitems*{a9a4e0e9-db33-4fec-b6f6-7753f8bf395c}*SharedItemsImports = 13
+		OGA.DomainBase_SP\OGA.DomainBase_SP.projitems*{c5dd212f-6faa-4679-832f-822dc428308d}*SharedItemsImports = 5
+		OGA_DomainBase_Tests_SP\OGA_DomainBase_Tests_SP.projitems*{c772945d-2b92-4fcf-85df-47325c71d418}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

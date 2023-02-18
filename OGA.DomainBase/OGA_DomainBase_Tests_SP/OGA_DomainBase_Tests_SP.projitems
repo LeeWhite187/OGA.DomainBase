@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2c133213-ac72-4918-bee3-777724242cd9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>OGA_DomainBase_Tests_SP</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_GuidID\DomainObject_GuidId_Tests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_GuidID\HelperClasses\ValueObject_GuidId_TestDerivedClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_GuidID\ValueObject_GuidId_Tests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_Int32ID\DomainObject_IntId_Tests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_Int32ID\HelperClasses\ValueObject_IntId_TestDerivedClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_Int32ID\ValueObject_IntId_Tests.cs" />
+  </ItemGroup>
+</Project>

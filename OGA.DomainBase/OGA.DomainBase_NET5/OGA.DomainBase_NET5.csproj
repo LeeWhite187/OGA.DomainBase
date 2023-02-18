@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Target Name="PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
+    <ReadLinesFromFile File="../OGA.DomainBase-RELEASE-NOTES.txt">
+      <Output TaskParameter="Lines" ItemName="ReleaseNoteLines" />
+    </ReadLinesFromFile>
+    <PropertyGroup>
+      <PackageReleaseNotes>@(ReleaseNoteLines, '%0a')</PackageReleaseNotes>
+    </PropertyGroup>
+  </Target>
+  
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageId>OGA.DomainBase</PackageId>
+    <Product>OGA Libraries</Product>
+    <Description>Provides base domain elements, such as: domain object, aggregate, user context, value object, etc.</Description>
+    <AssemblyName>OGA.DomainBase</AssemblyName>
+    <RootNamespace>OGA.DomainBase</RootNamespace>
+    <Configurations>DebugWin;ReleaseWin;DebugLinux;ReleaseLinux</Configurations>
+    <Version>2.0.6</Version>
+    <AssemblyVersion>2.0.18.6</AssemblyVersion>
+    <FileVersion>2.0.18.6</FileVersion>
+    <Company>OGA</Company>
+    <Authors>Lee White</Authors>
+    <PackageReleaseNotes>(Please write the package release notes in "OGA.DomainBase-RELEASE-NOTES.txt".)</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.EndsWith('Win'))">
+    <DefineConstants>$(DefineConstants);Windows</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.EndsWith('Linux'))">
+    <DefineConstants>$(DefineConstants);Linux</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration.EndsWith('OSX'))">
+    <DefineConstants>$(DefineConstants);OSX</DefineConstants>
+  </PropertyGroup>
+
+  <Import Project="..\OGA.DomainBase_SP\OGA.DomainBase_SP.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.0.4" />
+    <PackageReference Include="OGA.SharedKernel" Version="1.7.2" />
+  </ItemGroup>
+
+</Project>
