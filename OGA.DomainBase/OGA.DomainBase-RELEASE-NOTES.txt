@@ -1,46 +1,4 @@
-Type:			Project Release Notes
-For:			Domain Base Library
-Date:			20220927
-Description:	This is the base set of standardized classes for domain design usage.
-				It includes the following:
-					Aggregate root interface, to be inherited by all aggregate types.
-					Base repository interface, to be inherited by all repository classes.
-					Base configuration element entity class for standardized configuration storage.
-					Base domain object, to be inherited by all domain classes.
-					Base value object, to be inherited by all value objects, and classes with sample usage.
-					Base user context class, to allow for the implementation of role-based security at the domain service layer.
-					Query helpers to produce sorted and filtered paginated query results, at the domain service layer, with predicate building.
-Project Organizational Notes:
-				This library supports multiple Net Core targets (5 and 6) from a single Shared Project.
-				And, it also include testing in both targets from a single Shared project (of testing code).
-				Here's a list of the projects, to clarify each one's purpose:
-					OGA_DomainBase				Net 5 Target project
-					OGA_DomainBase_NET6			Net 6 Target project
-					OGA_DomainBase_SP			Shared code for target projects
-					OGA_DomainBase_NET6_Tests	Net 6 Target tests
-					OGA_DomainBase_Test2		Net 5 Target tests
-					OGA_DomainBase_Tests_SP		Shared code of test projects
-Targets:		Two compiled targets are currently generated. Both support all entity ID datatypes (string, int, Guid, etc), using a generic.
-Dependencies:	.NET 5.0
-				.NET 6.0
-				OGA.SharedKernel v1.2.1
-Repo_URL:		https://192.168.1.227/svn/NETCore_SoftwareLibraries/
-Source_Path:	NETCore SoftwareLibraries/OGA_DomainBase
-Binary_URL:		http://192.168.1.161:8080/packages/oga_domainbase
-Binary_URL:		http://192.168.1.161:8080/packages/oga_domainbase_NET6
-----------------------------------------
-Pending Changes:
-	Include in next release version...
-----------------------------------------
-Current:
-	Release:	v2.0.6
-	Date:		20220927
-	Build:		18
-	Changes:
-		1.	Compiled against latest libraries.
-
-----------------------------------------
-History:
+Pre-GitHub Change History:
 	Release:	v2.0.4
 	Date:		20220625
 	Build:		16

@@ -16,11 +16,11 @@
     <dependencies>
       <group targetFramework="net5.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="1.7.3" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="1.7.4" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net6.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="1.7.3" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="1.7.4" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
