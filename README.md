@@ -29,7 +29,7 @@ OGA.DomainBase is available via NuGet:
 
 ## Dependencies
 This library depends on:
-* OGA.SharedKernel
+* [OGA.SharedKernel](https://github.com/LeeWhite187/OGA.SharedKernel)
 
 ## Building OGA.DomainBase
 This library is built with the new SDK-style projects.
