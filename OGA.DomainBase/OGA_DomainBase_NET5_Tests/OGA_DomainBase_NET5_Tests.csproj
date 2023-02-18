@@ -16,7 +16,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="NLog" Version="5.0.4" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.4" />
-    <PackageReference Include="OGA.SharedKernel" Version="1.7.2" />
+    <PackageReference Include="OGA.SharedKernel" Version="1.7.3" />
   </ItemGroup>
 
   <ItemGroup>

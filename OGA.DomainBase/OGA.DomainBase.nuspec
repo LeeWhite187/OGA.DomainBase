@@ -11,15 +11,16 @@
     <releaseNotes>(Please write the package release notes in "OGA.DomainBase-RELEASE_NOTES.txt".)</releaseNotes>
     <copyright>$copyright$</copyright>
     <license type="expression">MIT</license>
+	<repository type="git" url="https://github.com/LeeWhite187/OGA.DomainBase" />
 
     <dependencies>
       <group targetFramework="net5.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="1.7.2" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="1.7.3" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net6.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="1.7.2" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="1.7.3" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
