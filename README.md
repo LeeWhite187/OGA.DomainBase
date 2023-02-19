@@ -3,7 +3,16 @@ Base Library for Domain Entities and value objects
 
 ## Description
 This is the base set of standardized classes for domain design usage.
-It includes the following:
+The intention of this library is to be consumed by the domain layer of an application.
+Specifically, this library is meant to provide the base domain entity and value object in a layered domain driven design.
+
+One feature of the domain base in this library is that the Id property is generic.
+So, you can choose the datatype for entity keys (long, Int32, Guid, string, etc...).
+This provides flexibility in the case that you may have a small domain that requires the lookup speed of integer-based keys.
+Or, in a more decentralized design, where entity keys must exist at class genesis, versus at-commit.
+This latter design choice (a Guid-based entity Id) has benefit in event sourcing write-models, where entity genesis requires key uniqueness, because of the limits of eventual consistency.
+
+This library includes the following:
 * Aggregate root interface, to be inherited by all aggregate types.
 * Base repository interface, to be inherited by all repository classes.
 * Base configuration element entity class for standardized configuration storage.
