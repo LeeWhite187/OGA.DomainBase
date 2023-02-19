@@ -20,7 +20,6 @@ OGA.DomainBase is available via NuGet:
 This library depends on:
 * [OGA.SharedKernel](https://github.com/LeeWhite187/OGA.SharedKernel)
 * [NLog](https://github.com/NLog/NLog/)
-* [Newtonsoft.JSON](https://github.com/JamesNK/Newtonsoft.Json)
 
 ## Building OGA.DomainBase
 This library is built with the new SDK-style projects.
