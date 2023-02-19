@@ -6,6 +6,7 @@ This is the base set of standardized classes for domain design usage.
 The intention of this library is to be consumed by the domain layer of an application.
 Specifically, this library is meant to provide the base domain entity and value object in a layered domain driven design.
 
+## Features
 One feature of the domain base in this library is that the Id property is generic.
 So, you can choose the datatype for entity keys (long, Int32, Guid, string, etc...).
 This provides flexibility in the case that you may have a small domain that requires the lookup speed of integer-based keys.
