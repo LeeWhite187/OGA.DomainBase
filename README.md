@@ -7,10 +7,11 @@ The intention of this library is to be consumed by the domain layer of an applic
 Specifically, this library is meant to provide the base domain entity and value object in a layered domain driven design.
 
 ## Features
-One feature of the domain base in this library is that the Id property is generic, allowing you to choose the datatype for entity keys (long, Int32, Guid, string, etc...).\
-This provides flexibility in the case that you may have a small domain that requires the lookup speed of integer-based keys.\
-Or, a large decentralized design, where entity keys must exist at class genesis, versus at-commit.
-The latter often requires the design choice of a Guid-based entity Id, where event sourcing write-models require key uniqueness at entity genesis, for collisionless eventual consistency.
+One feature of the domain base in this library is that the Id property is generic. It can be long, Int32, Guid, string, etc...\
+This provides flexibility for different design cases:
+* A small domain that benefits from the lookup speed of integer-based keys.\
+* A large decentralized design, where the design choice for key type is driven by collisionless eventual consistency (Guid keys exist at instantiation).\
+* A write-model paradigm, creating immutable events for posterity, before a backing store has a chance to return a key.
 
 This library includes the following:
 * Aggregate root interface, to be inherited by all aggregate types.
