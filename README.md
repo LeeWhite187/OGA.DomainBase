@@ -1,5 +1,5 @@
 # OGA.DomainBase
-Base Library for Domain Entities
+Base Library for Domain Entities and value objects
 
 ## Description
 This is the base set of standardized classes for domain design usage.
