@@ -10,7 +10,7 @@ namespace OGA.DomainBase.Entities
     /// Holds a single configuration property that can be stored in an EF database.
     /// Includes the property name, value, and datatype.
     /// </summary>
-    public class ConfigElement_v1 : NETCore_Common.Entities.cStorageBaseEntity
+    public class ConfigElement_v1 : cStorageBaseEntity
     {
         [Key]
         public string Key { get; set; }

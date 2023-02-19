@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NETCore_Common.Entities
+namespace OGA.DomainBase.Entities
 {
     /// <summary>
     /// Base entity for storing configuration data in an EF database backend.
