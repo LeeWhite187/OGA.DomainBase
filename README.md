@@ -18,10 +18,10 @@ This library includes the following:
 ## Features
 One feature of the domain base in this library is that the Id property is generic. It can be long, Int32, Guid, string, etc...\
 This provides flexibility for different design cases:
-* A small domain that benefits from the lookup speed of integer-based keys.
-* A domain that uses string keys with embedded type, like 'vm:1234' (like the MoRef in a VSphere domain model).
-* A large decentralized design, where the design choice for key type is driven by collisionless eventual consistency (Guid keys exist at instantiation).
-* A write-model paradigm, creating immutable events for posterity, before a backing store has a chance to return a key.
+* Small domains or domains that that need the lookup speed of integer-based keys.
+* Domain that need keys with embedded type, using key strings, such as 'vm:1234' (like a MoRef in the VSphere domain model).
+* Large decentralized models, where the design choice for key type is driven by collisionless eventual consistency (Guid keys exist at instantiation).
+* A write-model paradigm, recording immutable events for posterity, whose left-fold (projection) of events must recreate entities with the same key, everytime.
 
 ## Installation
 OGA.DomainBase is available via NuGet:
