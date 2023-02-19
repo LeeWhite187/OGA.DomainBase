@@ -6,14 +6,6 @@ This is the base set of standardized classes for domain design usage.
 The intention of this library is to be consumed by the domain layer of an application.
 Specifically, this library is meant to provide the base domain entity and value object in a layered domain driven design.
 
-## Features
-One feature of the domain base in this library is that the Id property is generic. It can be long, Int32, Guid, string, etc...\
-This provides flexibility for different design cases:
-* A small domain that benefits from the lookup speed of integer-based keys.
-* A domain that uses string keys with embedded type, like 'vm:1234' (like the MoRef in a VSphere domain model).
-* A large decentralized design, where the design choice for key type is driven by collisionless eventual consistency (Guid keys exist at instantiation).
-* A write-model paradigm, creating immutable events for posterity, before a backing store has a chance to return a key.
-
 This library includes the following:
 * Aggregate root interface, to be inherited by all aggregate types.
 * Base repository interface, to be inherited by all repository classes.
@@ -22,6 +14,14 @@ This library includes the following:
 * Base value object, to be inherited by all value objects, and classes with sample usage.
 * Base user context class, to allow for the implementation of role-based security at the domain service layer.
 * Query helpers to produce sorted and filtered paginated query results, at the domain service layer, with predicate building.
+
+## Features
+One feature of the domain base in this library is that the Id property is generic. It can be long, Int32, Guid, string, etc...\
+This provides flexibility for different design cases:
+* A small domain that benefits from the lookup speed of integer-based keys.
+* A domain that uses string keys with embedded type, like 'vm:1234' (like the MoRef in a VSphere domain model).
+* A large decentralized design, where the design choice for key type is driven by collisionless eventual consistency (Guid keys exist at instantiation).
+* A write-model paradigm, creating immutable events for posterity, before a backing store has a chance to return a key.
 
 ## Installation
 OGA.DomainBase is available via NuGet:
