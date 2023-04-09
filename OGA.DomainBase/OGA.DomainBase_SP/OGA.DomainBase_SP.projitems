@@ -24,5 +24,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Repositories\IRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SampleUsage\cItem_SampleValueObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SampleUsage\cSampleOwnerEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ServiceBase.cs" />
   </ItemGroup>
 </Project>
