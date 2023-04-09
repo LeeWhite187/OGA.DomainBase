@@ -14,6 +14,7 @@ This library includes the following:
 * Base value object, to be inherited by all value objects, and classes with sample usage.
 * Base user context class, to allow for the implementation of role-based security at the domain service layer.
 * Query helpers to produce sorted and filtered paginated query results, at the domain service layer, with predicate building.
+* Domain Service base, which includes UserContext and corelationId tracking.
 
 ## Features
 One feature of the domain base in this library is that the Id property is generic. It can be long, Int32, Guid, string, etc...\
