@@ -18,6 +18,9 @@ namespace OGA.DomainBase.Models
 
         public string[] roles  { get; set; }
 
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public UserContext()
         {
             roles = new string[] { };

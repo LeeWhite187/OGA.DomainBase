@@ -33,15 +33,15 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('Win'))">
-    <DefineConstants>$(DefineConstants);Windows</DefineConstants>
+    <DefineConstants>$(DefineConstants);Windows;NET5</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('Linux'))">
-    <DefineConstants>$(DefineConstants);Linux</DefineConstants>
+    <DefineConstants>$(DefineConstants);Linux;NET5</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('OSX'))">
-    <DefineConstants>$(DefineConstants);OSX</DefineConstants>
+    <DefineConstants>$(DefineConstants);OSX;NET5</DefineConstants>
   </PropertyGroup>
 
   <Import Project="..\OGA.DomainBase_SP\OGA.DomainBase_SP.projitems" Label="Shared" />

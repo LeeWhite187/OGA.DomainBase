@@ -17,5 +17,10 @@ namespace OGA.DomainBase.QueryHelpers
         /// Name of field to sort by.
         /// </summary>
         public string OrderProperty { get; set; }
+
+        public SortParam()
+        {
+            OrderProperty = "";
+        }
     }
 }
