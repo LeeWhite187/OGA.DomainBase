@@ -24,7 +24,7 @@
       </group>
       <group targetFramework="net7.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="3.3." exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="3.3.1" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
