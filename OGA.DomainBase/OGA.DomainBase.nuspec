@@ -30,18 +30,21 @@
   </metadata>
   <files>
     <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.dll" target="ref\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.xml" target="ref\net5.0" />
     <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net5.0" />
     <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net5.0" />
     <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net5.0" />
     <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux-x64\OGA.DomainBase.pdb" target="runtimes\linux-x64\lib\net5.0" />
 
     <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.dll" target="ref\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.xml" target="ref\net6.0" />
     <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net6.0" />
     <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net6.0" />
     <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net6.0" />
     <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux-x64\OGA.DomainBase.pdb" target="runtimes\linux-x64\lib\net6.0" />
 
     <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.dll" target="ref\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.xml" target="ref\net7.0" />
     <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net7.0" />
     <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net7.0" />
     <file src=".\OGA.DomainBase_NET7\bin\DebugLinux\net7.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net7.0" />
