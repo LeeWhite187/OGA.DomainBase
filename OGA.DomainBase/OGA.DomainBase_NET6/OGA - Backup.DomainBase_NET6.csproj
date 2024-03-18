@@ -10,7 +10,7 @@
   </Target>
   
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <PackageId>OGA.DomainBase</PackageId>
     <Product>OGA Libraries</Product>
     <Description>Provides base domain elements, such as: domain object, aggregate, user context, value object, etc.</Description>
@@ -33,22 +33,22 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('Win'))">
-    <DefineConstants>$(DefineConstants);Windows;NET7</DefineConstants>
+    <DefineConstants>$(DefineConstants);Windows;NET6</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('Linux'))">
-    <DefineConstants>$(DefineConstants);Linux;NET7</DefineConstants>
+    <DefineConstants>$(DefineConstants);Linux;NET6</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(Configuration.EndsWith('OSX'))">
-    <DefineConstants>$(DefineConstants);OSX;NET7</DefineConstants>
+    <DefineConstants>$(DefineConstants);OSX;NET6</DefineConstants>
   </PropertyGroup>
   
   <Import Project="..\OGA.DomainBase_SP\OGA.DomainBase_SP.projitems" Label="Shared" />
   
   <ItemGroup>
     <PackageReference Include="NLog" Version="5.0.4" />
-    <PackageReference Include="OGA.SharedKernel" Version="3.3.1" />
+    <PackageReference Include="OGA.SharedKernel" Version="3.3.2" />
   </ItemGroup>
 
 </Project>
