@@ -6,7 +6,7 @@
     <SharedGUID>2c133213-ac72-4918-bee3-777724242cd9</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>OGA_DomainBase_Tests_SP</Import_RootNamespace>
+    <Import_RootNamespace>OGA_DomainBase_Tests</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ModelTests_for_GuidID\DomainObject_GuidId_Tests.cs" />

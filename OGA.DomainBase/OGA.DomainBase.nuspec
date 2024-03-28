@@ -17,40 +17,40 @@
     <dependencies>
       <group targetFramework="net5.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="3.5.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net6.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="3.5.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework="net7.0">
         <dependency id="NLog" version="5.0.4" exclude="Build,Analyzers" />
-        <dependency id="OGA.SharedKernel" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="OGA.SharedKernel" version="3.5.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src="..\README.md" target="docs\" />
 
-    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.dll" target="ref\net5.0" />
-    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.xml" target="ref\net5.0" />
-    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net5.0" />
-    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net5.0" />
-    <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net5.0" />
-    <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux-x64\OGA.DomainBase.pdb" target="runtimes\linux-x64\lib\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win\OGA.DomainBase.dll" target="ref\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win\OGA.DomainBase.xml" target="ref\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win\OGA.DomainBase.dll" target="runtimes\win\lib\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugWin\net5.0\win\OGA.DomainBase.pdb" target="runtimes\win\lib\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux\OGA.DomainBase.dll" target="runtimes\linux\lib\net5.0" />
+    <file src=".\OGA.DomainBase_NET5\bin\DebugLinux\net5.0\linux\OGA.DomainBase.pdb" target="runtimes\linux\lib\net5.0" />
 
-    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.dll" target="ref\net6.0" />
-    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.xml" target="ref\net6.0" />
-    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net6.0" />
-    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net6.0" />
-    <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net6.0" />
-    <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux-x64\OGA.DomainBase.pdb" target="runtimes\linux-x64\lib\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win\OGA.DomainBase.dll" target="ref\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win\OGA.DomainBase.xml" target="ref\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win\OGA.DomainBase.dll" target="runtimes\win\lib\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugWin\net6.0\win\OGA.DomainBase.pdb" target="runtimes\win\lib\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux\OGA.DomainBase.dll" target="runtimes\linux\lib\net6.0" />
+    <file src=".\OGA.DomainBase_NET6\bin\DebugLinux\net6.0\linux\OGA.DomainBase.pdb" target="runtimes\linux\lib\net6.0" />
 
-    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.dll" target="ref\net7.0" />
-    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.xml" target="ref\net7.0" />
-    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.dll" target="runtimes\win-x64\lib\net7.0" />
-    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win-x64\OGA.DomainBase.pdb" target="runtimes\win-x64\lib\net7.0" />
-    <file src=".\OGA.DomainBase_NET7\bin\DebugLinux\net7.0\linux-x64\OGA.DomainBase.dll" target="runtimes\linux-x64\lib\net7.0" />
-    <file src=".\OGA.DomainBase_NET7\bin\DebugLinux\net7.0\linux-x64\OGA.DomainBase.pdb" target="runtimes\linux-x64\lib\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win\OGA.DomainBase.dll" target="ref\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win\OGA.DomainBase.xml" target="ref\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win\OGA.DomainBase.dll" target="runtimes\win\lib\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugWin\net7.0\win\OGA.DomainBase.pdb" target="runtimes\win\lib\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugLinux\net7.0\linux\OGA.DomainBase.dll" target="runtimes\linux\lib\net7.0" />
+    <file src=".\OGA.DomainBase_NET7\bin\DebugLinux\net7.0\linux\OGA.DomainBase.pdb" target="runtimes\linux\lib\net7.0" />
   </files>
 </package>
