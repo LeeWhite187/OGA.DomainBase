@@ -2,7 +2,7 @@ REM NET Core Software Library
 
 REM Build the library...
 dotnet restore "./OGA.DomainBase_NET5/OGA.DomainBase_NET5.csproj"
-dotnet build "./OGA.DomainBase_NET5/OGA.DomainBase_NET5.csproj" -c DebugLinux --runtime linuxs --no-self-contained
+dotnet build "./OGA.DomainBase_NET5/OGA.DomainBase_NET5.csproj" -c DebugLinux --runtime linux --no-self-contained
 
 dotnet restore "./OGA.DomainBase_NET5/OGA.DomainBase_NET5.csproj"
 dotnet build "./OGA.DomainBase_NET5/OGA.DomainBase_NET5.csproj" -c DebugWin --runtime win --no-self-contained
