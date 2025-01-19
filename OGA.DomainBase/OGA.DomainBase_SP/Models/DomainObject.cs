@@ -15,15 +15,14 @@ namespace OGA.DomainBase.Models
     {
         #region Public Properties
 
-        // Make the ID flexible at compile time.
-        // It can be an Int32, Int64, Guid, or String.
-        //[Newtonsoft.Json.JsonProperty]
+        /// <summary>
+        /// Make the ID flexible at compile time.
+        /// It can be an Int32, Int64, Guid, or String.
+        /// </summary>
         public TId Id { get; protected set; }
 
 
-        //[Newtonsoft.Json.JsonProperty]
         public DateTime? CreationDateUTC { get; protected set; }
-        //[Newtonsoft.Json.JsonProperty]
         public DateTime? ModifiedDateUTC { get; protected set; }
 
         #endregion
